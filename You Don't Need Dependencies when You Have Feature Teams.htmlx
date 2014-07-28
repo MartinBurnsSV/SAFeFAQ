@@ -1,0 +1,49 @@
+If your functional domain schema is simply hierarchical, and you can keep every single user story to a single domain, for all times, then great. Feature teams are wonderful.
+
+But the moment a single story falls into multiple domains, and best value is achieved by using it in more than one of them in a single release, the 1:1 mapping doesn't work. One team takes the story and delivers a service to it, the other one exploits it, and there may be no particularly strong rationale for which way round it goes.
+
+This is like my wife, who when she was young, tried to organise her books alphabetically by author, and size, and colour. All at the same time. No single organisational model based on an collection of books chosen by reader value would satisfy the simultaneous demands.
+
+If you think feature teams alone can always satisfy the need then either:
+<ol>
+
+	<li>You're picking stories based on delivery simplicity, not customer value.</li>
+	<li>Your experience is limited and you haven't yet seen (or understood) a context where a more complex domain model might be necessary.</li>
+	<li>Some other situation that I can't think of</li>
+</ol>
+
+
+<blockquote><h4>Example</h4>
+You're building an online shop. 
+
+<ul>
+	<li>One feature team handles card billing and has relationships with card schemes.</li>
+	<li>One handles shipping and has relationships with a logistics provider.
+</li>
+</ul>
+
+
+Both teams need a high confidence of valid addresses to feed to their provider. So you have a story that validates against <a href="http://en.wikipedia.org/wiki/Postcode_Address_File">an address database such as PAF</a>.
+
+You <em>could</em> build address capture and validation based on separate shipping and billing addresses, but a simpler use case is only shipping to the card billing address, so from a quicker value perspective, that's sensible to build first.
+
+<h5>Which team takes the story?</h5>
+
+</blockquote>
+
+So now you have a dependency. 
+
+
+
+<p class="lede">Do you think it might help to plan out which sprint the story will be available in, so the receiving team can use the service and test against it?</p>
+
+This isn't BDUF, as you don't need to do any more advance planning or design than <q>you take it, deliver it in Sprint 3 and part of the Sprint Output is the WSDL.</q>
+
+Of course, my team <em>can</em> build the dependent functionality earlier and test it with dummy data, but I'm not sure that having that code there without being able to do the integration test is a sound way of proceeding.
+
+[su_divider]
+[su_post field="post_modified" before="Last Modified: "]
+
+<h2>Got an improvement suggestion?</h2>
+Fill in the form below
+ [contact-form to='martin@everydaylean.info' subject='FAQ suggestion: Feature Teams'][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Suggested Improvement' type='textarea' required='1'/][/contact-form]
