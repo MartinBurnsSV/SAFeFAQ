@@ -1,5 +1,101 @@
 {
-  "title": "Press Space or double-click to edit",
+  "title": "SAFe Leadership Retreat",
   "id": 1,
-  "formatVersion": 2
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Venue",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "Activities",
+          "id": 10
+        },
+        "2": {
+          "title": "Transport",
+          "id": 11
+        },
+        "3": {
+          "title": "Food",
+          "id": 12
+        }
+      }
+    },
+    "2": {
+      "title": "Content",
+      "id": 5,
+      "ideas": {
+        "1": {
+          "title": "SAFe 4.0",
+          "id": 8
+        }
+      }
+    },
+    "3": {
+      "title": "Schedule",
+      "id": 9
+    },
+    "4": {
+      "title": "Swag",
+      "id": 21,
+      "ideas": {
+        "1": {
+          "title": "Options",
+          "id": 22
+        },
+        "2": {
+          "title": "Confirmed",
+          "id": 23
+        }
+      }
+    },
+    "-1": {
+      "title": "Budget",
+      "id": 4,
+      "ideas": {
+        "1": {
+          "title": "Sponsorship",
+          "id": 7
+        }
+      }
+    },
+    "-2": {
+      "title": "Attendees",
+      "id": 6,
+      "ideas": {
+        "1": {
+          "title": "Paid",
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": "SPC",
+              "id": 17
+            },
+            "2": {
+              "title": "SPCT",
+              "id": 19
+            }
+          }
+        },
+        "2": {
+          "title": "Guests",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "Dean",
+              "id": 15
+            },
+            "2": {
+              "title": "Jennifer",
+              "id": 16
+            }
+          }
+        }
+      }
+    },
+    "-3": {
+      "title": "Marketing",
+      "id": 20
+    }
+  }
 }
